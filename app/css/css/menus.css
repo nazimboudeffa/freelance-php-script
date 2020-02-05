@@ -1,0 +1,196 @@
+/*/* CSS Document */
+/*MENUS*/
+.navmenutabs{
+	height:31px;
+}
+* html .navmenutabs{
+	overflow: hidden;
+	}
+.navmenutabs ul{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 1em; /*offset of first tab relative to page left edge*/
+	padding: 0;
+}
+.navmenutabs li{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.navmenutabs a{
+	float: left;
+	position: relative;
+	top: 5px; /* 1) Number of pixels to protrude up for selected tab. Should equal (3) MINUS (2) below */
+	background:url(../images/t_left.jpg) no-repeat left top;
+	margin: 0;
+	margin-right: 3px; /*Spacing between each tab*/
+	padding: 0 0 0 6px;
+	text-decoration: none;
+	border-bottom:1px solid #7AB5DF;
+	line-height:18px;
+}
+
+.navmenutabs a span{
+	float: left;
+	position: relative;
+	display: block;
+	background:url(../images/t_right.jpg) no-repeat right top;
+	padding: 5px 14px 3px 3px; /* 2) Padding within each tab. The 3rd value, or 3px, should equal (1) MINUS (3) */
+	color: black;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.navmenutabs a span {float:none;}
+/* End IE5-Mac hack */
+.navmenutabs .selected a{
+	background:url(../images/t_left_b.jpg) no-repeat 0 0;
+	top: 0;
+	border-bottom:1px solid #EFF8FF;
+}
+
+.navmenutabs .selected a span{
+	background:url(../images/t_right_b.jpg) no-repeat right 0;
+	color: black;
+	padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+	top: 0;
+}
+
+.navmenutabs a:hover{
+	background:url(../images/t_left_b.jpg) no-repeat 0 0;
+	top: 0;
+	border-bottom:1px solid #EFF8FF;
+}
+
+
+.navmenutabs a:hover span{
+	background:url(../images/t_right_b.jpg) no-repeat right 0;
+	padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+	top: 0;
+}
+
+/* search page groups tab*/
+
+
+.clsCommonNav li, .clsCommonNavInner li {
+	background:url(../images/sep-comnav.jpg) no-repeat scroll right 0;
+	float:left;
+}
+.clsCommonNav li a:hover, .clsCommonNav .selected a, .clsCommonNavInner li a:hover, .clsCommonNavInner .selected a {
+	background:#00AFDA url(../images/bg_mover.jpg) no-repeat scroll left bottom;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.clsCommonNav li a:hover em, .clsCommonNav .current a em, .clsCommonNav .selected a em {
+	background:#00AFDA url(../images/over.png) no-repeat scroll left top;
+	left:-15px;
+	position:relative;
+	top:-9px;
+}
+.selected a .clsLatPrj {
+	background:url(../images/icm_latprjw.jpg) no-repeat scroll 0 0;
+}
+.clsCommonNav li a, .clsCommonNavInner li a {
+	display:block;
+	font-size:12px;
+	line-height:32px;
+	margin-right:1px;
+	padding:2px 20px 7px 15px;
+}
+.clsLatPrj {
+	background:url(../images/icm_latprj.png) no-repeat scroll 0 0;
+	padding-left:25px !important;
+}
+.clsCommonNav ul, .clsCommonNavInner ul {
+	margin:5px 0 5px -1px;
+	overflow:hidden;
+}
+.clsCommonNav li a:hover, .clsCommonNav .selected a, .clsCommonNavInner li a:hover, .clsCommonNavInner .selected a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.clsCommonNav li a, .clsCommonNavInner li a {
+	font-size:14px;
+	line-height:32px;
+}
+
+.clsFeaPrj {
+	background:url(../images/icm_feaprj.png) no-repeat scroll 0 0;
+	padding-left:25px !important;
+}
+.clsHdPrj {
+	background:url(../images/icm_hdprj.png) no-repeat scroll left center;
+	padding-left:25px !important;
+}
+.clsUrgPrj {
+	background:url(../images/icm_urgprj.png) no-repeat scroll 0 0;
+	padding-left:20px !important;
+}
+
+/*Home Page- End of Block*/
+.slidetabsmenu {
+	height:31px;
+}
+.slidetabsmenu ul {
+	list-style-type:none;
+	margin:0 0 0 1em;
+	overflow:visible !important;
+	padding:0;
+}
+.slidetabsmenu li {
+	float:left;
+	margin:0;
+	padding:0;
+}
+.slidetabsmenu a {
+	background:url(../images/t_left.jpg) no-repeat scroll left top;
+	border-bottom:1px solid #BFBFBF;
+	float:left;
+	line-height:18px;
+	margin:0 0.1em 0 0;
+	padding:0 0 0 6px;
+	position:relative;
+	text-decoration:none;
+	top:5px;
+}
+.slidetabsmenu a span {
+	float:none;
+}
+.slidetabsmenu a span {
+	background:url(../images/t_right.jpg) no-repeat scroll right top;
+	color:#FFFFFF;
+	display:block;
+	float:left;
+	padding:5px 14px 3px 3px;
+	position:relative;
+	text-align:center;
+}
+	
+
+.slidetabsmenu a:hover{
+	background:url(../images/t_left.jpg) no-repeat 0 0;
+	top: 0;
+	border-bottom:1px solid #FDFDFD;
+}
+
+.slidetabsmenu a:hover span{
+	background:url(../images/t_right.jpg) no-repeat right 0;
+	padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+	top: 0;
+}
+/*Added on Dec10*/
+.slidetabsmenu li.selected a {
+    background: url("../images/t_left.jpg") no-repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #FDFDFD;
+    top: 0;
+}
+.slidetabsmenu li.selected span {
+    background: url("../images/t_right.jpg") no-repeat scroll right 0 transparent;
+    padding-bottom: 8px;
+    top: 0;
+}
+/*End of Dec10*/
+/*End of Home Page- End of Block*/
+.TabMenu50 {
+margin-bottom:18px;
+}
